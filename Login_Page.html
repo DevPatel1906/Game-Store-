@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Game Store</title>
+        <link rel="stylesheet" href="Login_Page.css">
+    </head>
+    <body>
+        <header>
+            
+            <a href="Login_Page.html" class="logo">Game<span>Store</span></a>
+            <nav class="navigation">
+                <button class="btnlogin-popup">Login</button>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" id="login-email" name="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" id="login-password" name="password" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required> Remember Me</label>
+                    </div>
+                    <button class="btn" type="submit" onclick="validateLoginForm(event)">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?
+                            <a href="#" class="register-link">Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form id="register-form">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" id="username" name="username" required placeholder="Enter Username">
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" id="register-email" name="email" required placeholder="Enter Your Email`">
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" id="register-password" name="password" required placeholder="Enter Your Password">
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required> I agree to the terms & conditions</label>
+                    </div>
+                    <button class="btn" type="submit" onclick="validateRegisterForm(event)">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account?
+                            <a href="#" class="login-link">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="Login_Page.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
